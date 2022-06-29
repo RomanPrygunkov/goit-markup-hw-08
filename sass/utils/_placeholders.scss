@@ -1,0 +1,21 @@
+%transition-fill {
+    transition: fill $time $cubic;
+}
+
+%transition-color {
+    transition: color $time $cubic;
+}
+
+%transition-transform {
+    transition: transform $time $cubic;
+}
+
+%logo {
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    line-height: 1.16;
+    color: $selected-color;
+    text-decoration: none;
+}

@@ -1,0 +1,33 @@
+// .clients-list {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+
+// &__icon {
+//     width: 106px;
+//     height: 60px;
+//     fill: #AFB1B8;
+//     @extend %transition-fill;
+// }
+
+// &__links {
+//     display: inline-flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 170px;
+//     height: 92px;
+//     @include border (#AFB1B8);
+//     transition: border $time $cubic;
+
+//     &:hover,
+//     &:focus {
+//         @include border ($selected-color);
+//     }
+// }
+// }
+
+// .clients-list__links:hover .clients-list__icon,
+// .clients-list__links:focus .clients-list__icon {
+//     fill: $selected-color;
+// }
+

@@ -1,0 +1,168 @@
+// /* Footer style */
+// .footer-style {
+//     background-color: #2F303A;
+
+// }
+
+// .footer-padding {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+// }
+
+// /* Footer contacts */
+
+// .footer-formating {
+//     display: flex;
+//     align-items: baseline;
+
+// &__contacts {
+//     display: block;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     color: rgba(255, 255, 255, 0.6);
+//     text-decoration: none;
+//     @extend %transition-color;
+
+//     &:last-child {
+//         margin-top: 9px;
+//     }
+
+//     &:hover,
+//     &:focus {
+//         color: $selected-color;
+//     }
+// }
+
+// &__normal {
+//     font-style: normal;
+// }
+
+// &__adress {
+//     margin-top: 20px;
+//     margin-bottom: 9px;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     letter-spacing: 0.03em;
+//     color: $primary-text-color;
+// }
+
+// }
+
+
+// .footer-social {
+//     display: flex;
+//     flex-direction: column;
+//     margin-left: 70px;
+
+// &__list {
+//     display: flex;
+// }   
+
+// & li:not(:last-child) {
+//     margin-right: 10px;
+// }
+
+// &__links {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border-radius: 50%;
+//     padding: 0;
+//     margin: 0;
+//     width: 44px;
+//     height: 44px;
+//     background-color: rgba(255, 255, 255, 0.1);
+//     transition: background-color $time $cubic;
+
+//     &:hover,
+//     &:focus {
+//         background-color: $selected-color;
+//     }
+// }
+
+// &__icon {
+//     display: inline-flex;
+//     margin: 0;
+//     padding: 0;
+//     width: 20px;
+//     height: 20px;
+//     fill: $primary-text-color;
+// }
+
+// &__text {
+//     margin-bottom: 20px;
+//     text-transform: uppercase;
+//     color: $primary-text-color;
+// }
+// }
+
+// .footer-form {
+//     margin-left: 93px;
+
+// &__label {
+//     display: inline-flex;
+// }
+
+// &__input {
+//     padding-left: 16px;
+//     width: 358px;
+//     height: 50px;
+//     @include border (rgba(255, 255, 255, 0.3));
+    
+//     background-color: #2F303A;
+//     color: $primary-text-color;
+// }
+
+// &__input::placeholder {
+//     padding-top: 15px;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 1.25;
+//     letter-spacing: 0.03em;
+//     color: rgba(255, 255, 255, 0.6);
+// }
+
+// &__button {
+//     display: inline-flex;
+    
+//     margin-left: 12px;
+//     padding-left: 29px;
+//     padding-right: 28px;
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+
+//     outline: none;
+//     min-width: 200px;
+//     height: 50px;
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.87;
+//     align-items: center;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     color: $primary-text-color;
+//     border: 0px;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     border-color: $selected-color;
+//     background-color: $selected-color;
+//     cursor: pointer;
+
+//     &::after {
+//         display: block;
+//         margin-left: 10px;
+//         content: "";
+//         width: 24px;
+//         height: 24px;
+//         background-image: url("../images/iconplane.svg");
+//         background-size: contain;
+//         background-repeat: no-repeat;
+//     }
+// }
+
+// }
+
