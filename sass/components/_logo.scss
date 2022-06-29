@@ -1,11 +1,13 @@
 .header-formating__logo {
     @extend %logo;
     
+    
 }
 
-// .footer-formating__logo {
-//     @extend %logo;
-// }
+.footer-formating__logo {
+    @extend %logo;
+    
+}
 
 /* Separate color for logo in head*/
 .header-formating__logo--secondary-color {
@@ -13,8 +15,8 @@
     
 }
 
-// /* Separate color for logo in footer */
-// .footer-formating__logo--secondary-color {
-//     color: $primary-text-color;
-// }
+/* Separate color for logo in footer */
+.footer-formating__logo--secondary-color {
+    color: $primary-text-color;
+}
 

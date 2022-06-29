@@ -1,6 +1,6 @@
-// .header-border {
-//     border-bottom: 1px solid #ECECEC;
-// }
+.header-border {
+    border-bottom: 1px solid #ECECEC;
+}
 
 
 
@@ -42,11 +42,12 @@
 // }
 // }
 
-// .header-formating {
-   
-//     display: flex;
-//     align-items: center;
-// }
+.header-formating {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
 
 // .header-contacts {
 //     margin-left: auto;
