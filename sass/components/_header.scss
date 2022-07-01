@@ -43,10 +43,10 @@
 // }
 
 .header-formating {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 // .header-contacts {
@@ -89,4 +89,8 @@
 
 .header-container {
     display: none;
+
+&.is-open {
+    display: block;
+}
 }

@@ -1,5 +1,5 @@
 .main-header {
-    width: 360px;
+    width: 300px;
     margin-bottom: 30px;
     color: $primary-text-color;
 }
@@ -10,6 +10,7 @@
 }
 
 .main-header-bg {
+    min-width: 320px;
     max-width: 480px;
     max-height: 400px;
     margin-left: auto;

@@ -1,9 +1,8 @@
 .clients-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    // align-items: center;
-    // justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 
 &__icon {
     width: 106px;
@@ -26,6 +25,10 @@
         @include border ($selected-color);
     }
 }
+}
+
+.clients-list li:not(:last-child) {
+    margin-bottom: 15px;
 }
 
 .clients-list__links:hover .clients-list__icon,

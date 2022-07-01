@@ -15,13 +15,21 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./js/modal.js" />
+    <link rel="stylesheet" href="./js/menu.js" />
   </head>
   <body>
     <header class="header-border">
-      <div class="container header-formating">
+      <div class="container">
         <nav class="header-formating">
           <a href="./index.html" class="header-formating__logo" aria-label="Логотип"
             >Web<span class="header-formating__logo--secondary-color">Studio</span></a>
+              <button type="button" class="header-formatting__button " data-menu-button aria-expanded="false">
+                <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                  <use class="header-formatting__icon--menu" href="./images/sprite.svg#icon-menu"></use>
+                  <use class="header-formatting__icon--close" href="./images/sprite.svg#icon-menuclose"></use>               
+                 </svg>
+            </button>
+                 
 
           <div class="header-container">
               <ul class="header-nav">
@@ -64,6 +72,10 @@
 
     <!-- main -->
     <main>
+      <div class="menu-container" data-menu id="mobile-menu">
+          
+      </div>
+
       <!-- Section 1 Main image with button-->
       <section class="main-header-bg section">
         <h1 class="main-header">Эффективные решения для вашего бизнеса</h1>
@@ -258,7 +270,7 @@
               </div>
             </li>
             <li class="staff-list__item">
-              <img src="./images/Olga.jpg" alt="Ольга Репина" width="270" />
+              <img src="./images/Olga.jpg" alt="Ольга Репина"/>
               <div class="staff-list__container">
                 <h3 class="staff-list__title">Ольга Репина</h3>
                 <p class="staff-list__descript">Frontend Developer</p>
@@ -295,7 +307,7 @@
               </div>
             </li>
             <li class="staff-list__item">
-              <img src="./images/Nikolay.jpg" alt="Николай Тарасов" width="270" />
+              <img src="./images/Nikolay.jpg" alt="Николай Тарасов"/>
               <div class="staff-list__container">
                 <h3 class="staff-list__title">Николай Тарасов</h3>
                 <p class="staff-list__descript">Marketing</p>
@@ -332,7 +344,7 @@
               </div>
             </li>
             <li class="staff-list__item">
-              <img src="./images/Mihail.jpg" alt="Михаил Ермаков" width="270" />
+              <img src="./images/Mihail.jpg" alt="Михаил Ермаков"/>
               <div class="staff-list__container">
                 <h3 class="staff-list__title">Михаил Ермаков</h3>
                 <p class="staff-list__descript">UI Designer</p>
@@ -484,6 +496,7 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
 
