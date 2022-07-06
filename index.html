@@ -19,11 +19,11 @@
   </head>
   <body>
     <header class="header-border">
-      <div class="container">
-        <nav class="header-formating">
-          <a href="./index.html" class="header-formating__logo" aria-label="Логотип"
+      <div class="container header-formating">
+        
+          <a href="./index.html" class="header-formating__logo" aria-label="Логотип" 
             >Web<span class="header-formating__logo--secondary-color">Studio</span></a>
-              <button type="button" class="header-formatting__button " data-menu-button aria-expanded="false" aria-controls="menu-container">
+              <button type="button" class="header-formatting__button" data-menu-button aria-expanded="false" aria-controls="menu-container">
                 <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
                   <use class="header-formatting__icon--menu" href="./images/sprite.svg#icon-menu"></use>
                   <use class="header-formatting__icon--close" href="./images/sprite.svg#icon-menuclose"></use>               
@@ -31,7 +31,8 @@
             </button>
                  
 
-          <div class="header-container">
+          <div class="header-container" data-menu>
+            <nav class="header-formating">
               <ul class="header-nav">
                 <li class="header-nav__item">
                   <a href="./index.html" class="header-nav__link header-nav__link--secondary-color">Студия</a>
@@ -41,10 +42,10 @@
                 </li>
                 <li class="header-nav__item"><a href="" class="header-nav__link">Контакты</a></li>
               </ul>
-              </div>
+              
               </nav>
           
-          <div class="header-container">
+          
               <ul class="header-contacts">
                 <li class="header-contacts__item">
                   <a href="mailto:info@devstudio.com" class="header-contacts__link" aria-label="Ссылка на почту">
@@ -55,17 +56,31 @@
                   </a>
                 </li>
                 <li class="header-contacts__item">
-                  <a href="tel:+380961111111" class="header-contacts__link" aria-label="Контактный телефон">
+                  <a href="tel:+380961111111" class="header-contacts__link header-contacts__link--second" aria-label="Контактный телефон">
                     <svg class="header-contacts__icon" width="10px" height="16px" aria-label="Иконка телефона">
                       <use href="./images/sprite.svg#iconsmartphone"></use>
                     </svg>
                     +38 096 111 11 11
                   </a>
-                  
                 </li>
               </ul>
+              <ul class="header-contacts__social">
+                <li class="header-contacts__social--item">
+                  <a href="">Instagram</a>
+                </li>
+                <li class="header-contacts__social--item">
+                  <a href="">Twitter</a>
+                </li>
+                <li class="header-contacts__social--item">
+                  <a href="">Facebook</a>
+                </li>
+                <li class="header-contacts__social--item">
+                  <a href="">LinkedIn</a>
+                </li>
+              </ul>
+            
           </div>
-         
+        
       
       </div>
     </header>

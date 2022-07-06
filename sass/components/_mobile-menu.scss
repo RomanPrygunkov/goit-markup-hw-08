@@ -1,11 +1,16 @@
 .header-formatting__button {
-    display: inline-flex;
+    position: absolute;
+    right: 15px;
+    top: 10px;
     margin: 0;
     padding: 0;
     border: none;
     background-color: $primary-text-color;
+    z-index: 999;
 
 }
+
+
 
 .header-formatting__button.is-open .header-formatting__icon--close {
     display: block;
@@ -13,22 +18,20 @@
 
 .header-formatting__button.is-open .header-formatting__icon--menu {
     display: none;
+
 }
 
-.menu-container {
-    display: none;
-    position: absolute;
-    top: 100;
-    left: 0;
-    background-color: $primary-text-color;
-    width: 100vw;
-    height: 100vh;
-    z-index: 999;
-&.is-open {
-    display: block;
-}
+.header-formatting__icon--menu {
+
 }
 
 .header-formatting__icon--close {
     display: none;
+
+}
+
+.header-contacts__social {
+    display: flex;
+    margin-left: 40px;
+    text-decoration: none;
 }
