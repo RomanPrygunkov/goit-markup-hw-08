@@ -7,45 +7,77 @@
     <title>Портфолио</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./js/menu.js" />
+    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./js/menu.js"/>
 </head>
 <body>
     <!-- Header -->
     <header class="header-border">
         <div class="container header-formating">
-            <nav class="header-formating">
-                <a href="./index.html" class="header-formating__logo" aria-label="Логотип">Web<span
-                        class="header-formating__logo--secondary-color">Studio</span></a>
-                <ul class="header-nav">
-                    <li class="header-nav__item">
-                        <a href="./index.html" class="header-nav__link">Студия</a>
-                    </li>
-                    <li class="header-nav__item">
-                        <a href="./portfolio.html" class="header-nav__link header-nav__link--secondary-color">Портфолио</a>
-                    </li>
-                    <li class="header-nav__item"><a href="" class="header-nav__link">Контакты</a></li>
-                </ul>
-            </nav>
     
-            <ul class="header-contacts">
-                <li class="header-contacts__item">
-                    <a href="mailto:info@devstudio.com" class="header-contacts__link" aria-label="Ссылка на почту">
-                        <svg class="header-contacts__icon" width="16px" height="12px" aria-label="Иконка конверта">
-                            <use href="./images/sprite.svg#iconmail"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="header-contacts__item">
-                    <a href="tel:+380961111111" class="header-contacts__link" aria-label="Контактный телефон">
-                        <svg class="header-contacts__icon" width="10px" height="16px" aria-label="Иконка телефона">
-                            <use href="./images/sprite.svg#iconsmartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            <a href="./index.html" class="header-formating__logo" aria-label="Логотип">Web<span
+                    class="header-formating__logo--secondary-color">Studio</span></a>
+            <button type="button" class="header-formatting__button" data-menu-button aria-expanded="false"
+                aria-controls="menu-container">
+                <svg class="header-formatting__icon" width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                    <use class="header-formatting__icon--menu" href="./images/sprite.svg#icon-menu"></use>
+                    <use class="header-formatting__icon--close" href="./images/sprite.svg#icon-menuclose"></use>
+                </svg>
+            </button>
+    
+    
+            <div class="header-container" data-menu>
+                <nav class="header-formating">
+                    <ul class="header-nav">
+                        <li class="header-nav__item">
+                            <a href="./index.html" class="header-nav__link">Студия</a>
+                        </li>
+                        <li class="header-nav__item">
+                            <a href="./portfolio.html" class="header-nav__link header-nav__link--secondary-color">Портфолио</a>
+                        </li>
+                        <li class="header-nav__item"><a href="" class="header-nav__link">Контакты</a></li>
+                    </ul>
+    
+                </nav>
+    
+    
+                <ul class="header-contacts">
+                    <li class="header-contacts__item">
+                        <a href="mailto:info@devstudio.com" class="header-contacts__link" aria-label="Ссылка на почту">
+                            <svg class="header-contacts__icon" width="16px" height="12px" aria-label="Иконка конверта">
+                                <use href="./images/sprite.svg#iconmail"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="header-contacts__item">
+                        <a href="tel:+380961111111" class="header-contacts__link header-contacts__link--second"
+                            aria-label="Контактный телефон">
+                            <svg class="header-contacts__icon" width="10px" height="16px" aria-label="Иконка телефона">
+                                <use href="./images/sprite.svg#iconsmartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header-contacts__social">
+                    <li class="header-contacts__social--item">
+                        <a href="">Instagram</a>
+                    </li>
+                    <li class="header-contacts__social--item">
+                        <a href="">Twitter</a>
+                    </li>
+                    <li class="header-contacts__social--item">
+                        <a href="">Facebook</a>
+                    </li>
+                    <li class="header-contacts__social--item">
+                        <a href="">LinkedIn</a>
+                    </li>
+                </ul>
+    
+            </div>
+    
+    
         </div>
     </header>
     <!-- Main -->
@@ -71,13 +103,13 @@
           
         
         <!-- Section 2 -->
-       <section class="section custom-top-padding">   
+       <section class="section">   
            <div class="container">      
             <ul class="portfolio-list">
                 <li class="portfolio-list__cards">
                 <a href="" class="portfolio-list__links">
                     <div class="portfolio-overlay">
-                        <img src="./images/technokrack.jpg" alt="Технокряк" width="370">
+                        <img src="./images/technokrack.jpg" alt="Технокряк" >
                         <p class="portfolio-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                         исчерпывающие сведения о компании или частном лице.</p>
                     </div>
@@ -90,7 +122,7 @@
             <li class="portfolio-list__cards">
                 <a href="" class="portfolio-list__links">
                     <div class="portfolio-overlay">
-                        <img src="./images/neworlean.jpg" alt="Постер новый Орлеан" width="370">
+                        <img src="./images/neworlean.jpg" alt="Постер новый Орлеан" >
                         <p class="portfolio-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
                     <div class="portfolio-container">
@@ -102,7 +134,7 @@
             <li class="portfolio-list__cards">
                 <a href="" class="portfolio-list__links">
                     <div class="portfolio-overlay">
-                        <img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370">
+                        <img src="./images/seafood.jpg" alt="Ресторан Seafood" >
                         <p class="portfolio-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
                     <div class="portfolio-container">
@@ -114,7 +146,7 @@
             <li class="portfolio-list__cards">
                 <a href="" class="portfolio-list__links">
                     <div class="portfolio-overlay">
-                        <img src="./images/prime.jpg" alt="Проект Prime" width="370">
+                        <img src="./images/prime.jpg" alt="Проект Prime" >
                         <p class="portfolio-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
                     <div class="portfolio-container">
@@ -126,7 +158,7 @@
             <li class="portfolio-list__cards">
                 <a href="" class="portfolio-list__links">
                     <div class="portfolio-overlay">
-                        <img src="./images/boxes.jpg" alt="Проект Boxes" width="370">
+                        <img src="./images/boxes.jpg" alt="Проект Boxes" >
                         <p class="portfolio-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
                     <div class="portfolio-container">
@@ -138,7 +170,7 @@
             <li class="portfolio-list__cards">
                 <a href="" class="portfolio-list__links">
                     <div class="portfolio-overlay">
-                        <img src="./images/inspiration.jpg" alt="Inspiration has no Borders" width="370">
+                        <img src="./images/inspiration.jpg" alt="Inspiration has no Borders" >
                         <p class="portfolio-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
                     <div class="portfolio-container">
@@ -150,7 +182,7 @@
             <li class="portfolio-list__cards">
                 <a href="" class="portfolio-list__links">
                     <div class="portfolio-overlay">
-                        <img src="./images/limited.jpg" alt="Издание Limited Edition" width="370">
+                        <img src="./images/limited.jpg" alt="Издание Limited Edition" >
                         <p class="portfolio-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
                     <div class="portfolio-container">
@@ -174,7 +206,7 @@
             <li class="portfolio-list__cards">
                 <a href="" class="portfolio-list__links">
                     <div class="portfolio-overlay">
-                        <img src="./images/growing.jpg" alt="Growing Business" width="370">
+                        <img src="./images/growing.jpg" alt="Growing Business" >
                         <p class="portfolio-overlay__description">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                     </div>
                     <div class="portfolio-container">
@@ -244,5 +276,6 @@
             </form>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

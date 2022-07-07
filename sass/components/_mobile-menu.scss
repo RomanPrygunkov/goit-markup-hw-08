@@ -5,12 +5,20 @@
     margin: 0;
     padding: 0;
     border: none;
-    background-color: $primary-text-color;
+    background-color: transparent;
     z-index: 999;
-
+&:focus>svg,
+&:hover>svg {
+    fill: $selected-color
+}    
 }
 
-
+.header-formatting__icon--menu{
+    @extend %transition-fill;
+}
+.header-formatting__icon--close {
+    @extend %transition-fill;
+}
 
 .header-formatting__button.is-open .header-formatting__icon--close {
     display: block;
@@ -21,9 +29,8 @@
 
 }
 
-.header-formatting__icon--menu {
 
-}
+
 
 .header-formatting__icon--close {
     display: none;
@@ -32,6 +39,25 @@
 
 .header-contacts__social {
     display: flex;
+    margin-top: 40px;
     margin-left: 40px;
+
+&--item a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
     text-decoration: none;
+    color: $selected-color;
+}
+
+
+&--item:not(:last-child) {
+    padding-right: 5px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+&--item:not(:first-child) {
+    padding-left: 5px;
+}
+
 }

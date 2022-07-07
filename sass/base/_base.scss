@@ -6,6 +6,9 @@ body {
     letter-spacing: $lspace;
     color: $links-gray;
 }
+body.modal-open {
+    overflow: hidden;
+}
 
 .section {
     padding-top: 60px;
