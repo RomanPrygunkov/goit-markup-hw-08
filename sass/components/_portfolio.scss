@@ -5,21 +5,26 @@
 
 // /* Cards in Porfolio */
 .portfolio-list {
-    
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
 
 &__cards {
+    
     box-sizing: border-box;
-    width: 300px;
+    min-width: 90vw;
     &:not(:last-child) {
         margin-bottom: 30px;
     }
+@media screen and (min-width: $mobile) {
+    min-width: 450px;
+}
 }
 
 &__links {
     display: block;
-  
+
     text-decoration: none;
     transition: box-shadow $time $cubic;
 
@@ -37,6 +42,7 @@
 .portfolio-list__links:hover .portfolio-overlay__description,
 .portfolio-list__links:focus .portfolio-overlay__description {
     transform: translateY(0);
+    
 }
 
 
@@ -44,6 +50,7 @@
 .portfolio-overlay {
     position: relative;
     overflow: hidden;
+    
 
 &__description {
     position: absolute;
@@ -54,7 +61,7 @@
     left: 0;
     transform: translateY(100%);
     @extend %transition-transform;
-
+    
     padding-top: 63px;
     padding-right: 24px;
     padding-left: 24px;
@@ -70,14 +77,18 @@
 }
 
 & img {
-    width: 310px;
+    width: 100%;
+    
+    @media screen and (min-width: $mobile) {
+            max-width: 450px;
+        }
 }
 
 }
 
 
 .portfolio-container {
-   
+    
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
@@ -87,7 +98,7 @@
     border-bottom: 1px solid #EEEEEE;
 
     &__descript {
-       
+    
         font-weight: 400;
         font-size: 16px;
         line-height: 1.87;

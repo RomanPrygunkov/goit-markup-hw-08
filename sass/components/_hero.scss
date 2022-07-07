@@ -2,6 +2,10 @@
     width: 300px;
     margin-bottom: 30px;
     color: $primary-text-color;
+    
+@media screen and (min-width: $mobile) {
+        width: 360px;
+    }
 }
 
 .main-header-bg.section {

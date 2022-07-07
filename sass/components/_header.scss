@@ -21,7 +21,7 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: $main-black-color;
-
+    @extend %transition-color;
     &:hover,
     &:focus {
         color: $selected-color;
@@ -48,6 +48,9 @@
     margin-top: 200px;
     margin-left: 40px;
 
+@media screen and (min-width: $mobile) {
+    margin-top: 302px;
+}
 &__item:not(:last-child) {
     margin-top: 32px;
 
@@ -60,7 +63,11 @@
     line-height: 28px;
     letter-spacing: 1.16;
     color: $links-gray;
-    
+    @extend %transition-color;
+    &:hover,
+    &:focus {
+        color: $selected-color;
+    }
 }
 
 &__icon {
@@ -74,7 +81,12 @@
     font-size: 34px;
     line-height: 1.17;    
     letter-spacing: 0.02em;
-    color: $selected-color;
+    color: $links-gray;
+    @extend %transition-color;
+    &:hover,
+    &:focus {
+        color: $selected-color;
+    }
 }
 
 .header-contacts__item:hover .header-contacts__icon,
@@ -84,6 +96,7 @@
 
 .header-container {
     display: none;
+    z-index: 99;
 
 &.is-open {
     position: absolute;
