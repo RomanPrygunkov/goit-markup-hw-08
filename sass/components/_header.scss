@@ -37,6 +37,7 @@
         color: $selected-color;
     }
 @media screen and (min-width: $tablets) {
+    position: relative;
     font-size: 14px;
     line-height: 1.14;
     padding-top: 32px;
@@ -52,14 +53,20 @@
 .header-nav__link--secondary-color {
     color: $selected-color;
 
-}
-.header-nav__link--secondary-color::after {
+&::after {
+@media screen and (min-width: $tablets) {
+    position: absolute;
+    display: block;
     content: "";
+    bottom: 0;
     width: 100%;
-    height: 2px;
     border-bottom: 4px solid $selected-color;
     border-radius: 2px;
+    transform: translateY(1px);
 }
+}
+}
+
 
 .header-formating {
     position: relative;
