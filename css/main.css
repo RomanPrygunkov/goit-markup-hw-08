@@ -35,6 +35,13 @@
   padding-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .header-formating__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
 /* Separate color for logo in head*/
 .header-formating__logo--secondary-color {
   color: #000000;
@@ -61,8 +68,28 @@
   margin-left: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .header-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+}
+
 .header-nav__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-nav__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
 }
 
 .header-nav__link {
@@ -78,8 +105,25 @@
   color: #2196F3;
 }
 
+@media screen and (min-width: 768px) {
+  .header-nav__link {
+    font-size: 14px;
+    line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .header-nav__link--secondary-color {
   color: #2196F3;
+}
+
+.header-nav__link--secondary-color::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  border-bottom: 4px solid #2196F3;
+  border-radius: 2px;
 }
 
 .header-formating {
@@ -93,6 +137,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .header-formating {
+    margin-right: 84px;
+  }
 }
 
 .header-contacts {
@@ -113,8 +163,28 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+}
+
 .header-contacts__item:not(:last-child) {
   margin-top: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__item:not(:last-child) {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
 }
 
 .header-contacts__link {
@@ -130,8 +200,39 @@
   color: #2196F3;
 }
 
+@media screen and (min-width: 768px) {
+  .header-contacts__link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
 .header-contacts__icon {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__icon {
+    display: inline-block;
+    margin-right: 8px;
+    fill: #757575;
+  }
+}
+
+.header-contacts__icon.mail {
+  width: 14px;
+  height: 10px;
+}
+
+.header-contacts__icon.phone {
+  width: 10px;
+  height: 14px;
 }
 
 .header-contacts__link--second {
@@ -146,6 +247,13 @@
   color: #2196F3;
 }
 
+@media screen and (min-width: 768px) {
+  .header-contacts__link--second {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
 .header-contacts__item:hover .header-contacts__icon,
 .header-contacts__item:focus .header-contacts__icon {
   fill: #2196F3;
@@ -154,6 +262,14 @@
 .header-container {
   display: none;
   z-index: 99;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header-container.is-open {
@@ -900,13 +1016,13 @@ body.modal-open {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    outline: 1px solid red;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    outline: 1px solid red;
   }
 }
 
@@ -1020,7 +1136,6 @@ h1 {
 
 .modal-form {
   width: 290px;
-  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -1329,6 +1444,12 @@ h1 {
   fill: #2196F3;
 }
 
+@media screen and (min-width: 768px) {
+  .header-formatting__button {
+    display: none;
+  }
+}
+
 .header-formatting__button.is-open .header-formatting__icon--close {
   display: block;
 }
@@ -1388,6 +1509,12 @@ h1 {
 @media screen and (min-width: 480px) {
   .header-contacts__social--item:not(:first-child) {
     padding-left: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__social {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -10,7 +10,11 @@
 &:focus>svg,
 &:hover>svg {
     fill: $selected-color
-}    
+}
+
+@media screen and (min-width: $tablets) {
+    display: none;
+}
 }
 
 .header-formatting__icon--menu{
@@ -72,6 +76,10 @@
 @media screen and (min-width: $mobile) {
     padding-left: 10px;
 }
+}
+
+@media screen and (min-width: $tablets) {
+    display: none;
 }
 
 }
