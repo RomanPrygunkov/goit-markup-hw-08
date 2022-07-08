@@ -1000,7 +1000,8 @@ h1 {
   text-align: center;
   top: 55%;
   left: 50%;
-  min-height: 581px;
+  width: 310px;
+  min-height: 500px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1012,13 +1013,20 @@ h1 {
 @media screen and (min-width: 480px) {
   .modal {
     top: 50%;
-    min-width: 450px;
+    width: 450px;
     min-height: 609px;
   }
 }
 
 .modal-form {
-  min-width: 90vw;
+  width: 290px;
+  outline: 1px solid red;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-form {
+    width: 370px;
+  }
 }
 
 .modal-close {
@@ -1057,16 +1065,16 @@ h1 {
 }
 
 .modal-description {
-  font-size: 20px;
-  line-height: 1.15;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 12px;
+  line-height: 1.16;
   color: #212121;
 }
 
 @media screen and (min-width: 480px) {
   .modal-description {
-    width: 370px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
   }
 }
 
@@ -1075,8 +1083,6 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .modal-area:nth-child(-n+4) {
@@ -1158,6 +1164,12 @@ h1 {
   color: #2196F3;
 }
 
+@media screen and (min-width: 480px) {
+  .modal-form textarea {
+    height: 120px;
+  }
+}
+
 .modal-form textarea::-webkit-input-placeholder {
   padding: 0;
   font-weight: 400;
@@ -1192,8 +1204,13 @@ h1 {
 
 .agreement-position {
   margin-top: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 17px;
+}
+
+@media screen and (min-width: 480px) {
+  .agreement-position {
+    margin-left: 14px;
+  }
 }
 
 .agreement-position__input {
@@ -1274,6 +1291,13 @@ h1 {
 
 .agreement-position__button:hover, .agreement-position__button:focus {
   background-color: #188CE8;
+}
+
+@media screen and (min-width: 480px) {
+  .agreement-position__button {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .agreement-position__label > span {

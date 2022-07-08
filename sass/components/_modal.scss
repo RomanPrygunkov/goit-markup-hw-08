@@ -33,8 +33,8 @@
     top: 55%;
     left: 50%;
    
-    // min-width: 300px;
-    min-height: 581px;
+    width: 310px;
+    min-height: 500px;
     background-color: $primary-text-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -43,18 +43,23 @@
 
 @media screen and (min-width: $mobile) {
     top: 50%;
-    min-width: 450px;
+    width: 450px;
     min-height: 609px;
+    
 }
 
-    &-form {
-        
-        min-width: 90vw;
-        
-        
+
+
+&-form {
+    width: 290px;
+    outline: 1px solid red;
+@media screen and (min-width: $mobile) {
+        width: 370px;
+}
     }
 
-    &-close {
+
+&-close {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -69,12 +74,12 @@
         @include border(rgba(0, 0, 0, 0.1), 50%);
     }
 
-    & p {
+& p {
         margin-top: 40px;
         margin-bottom: 30px;
     }
 
-    &-iconclose {
+&-iconclose {
         width: 11px;
         height: 11px;
         fill: black;
@@ -83,22 +88,20 @@
         @extend %transition-fill;
     }
 
-    &-description {
-        font-size: 20px;
-        line-height: 1.15;
-        margin-left: auto;
-        margin-right: auto;
+&-description {
+        font-size: 12px;
+        line-height: 1.16;
         color: $main-black-color;
-    @media screen and (min-width: $mobile) {
-        width: 370px;
+@media screen and (min-width: $mobile) {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
     }
     }
 
-    &-area {
+&-area {
         position: relative;
         display: flex;
-        margin-left: 40px;
-        margin-right: 40px;
         &:nth-child(-n+4) {
             margin-bottom: 28px;
         }
@@ -106,7 +109,7 @@
 
     }
 
-    &-input {
+&-input {
         display: block;
         
         padding-left: 42px;
@@ -124,7 +127,7 @@
        
     }
 
-    &-icon {
+&-icon {
         position: absolute;
         top: 14px;
         left: 15px;
@@ -134,7 +137,7 @@
         @extend %transition-fill;
     }
 
-    &-title {
+&-title {
         position: absolute;
         transform: translateY(calc(-100% - 4px));
         font-weight: 400;
@@ -179,6 +182,9 @@
     &:focus ~ .modal-title {
         color: $selected-color;
     }
+@media screen and (min-width: $mobile) {
+    height: 120px;
+}
 }
 
 
@@ -193,11 +199,11 @@
 
 .agreement-position {
     margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 17px;
+    // margin-right: 40px;
 
 @media screen and (min-width: $mobile) {
-   
+    margin-left: 14px;
 }
 
     &__input {
@@ -271,6 +277,11 @@
         &:focus {
             background-color: #188CE8;
         }
+
+    @media screen and (min-width: $mobile) {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
     }
 }
 
