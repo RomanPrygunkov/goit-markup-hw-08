@@ -33,6 +33,11 @@
     background-size: cover;
     background-position: center;
 
+@media screen and (min-width: $tablets) {
+    max-width: 768px;
+    max-height: 400px;
+}
+    
 }
 
 .button-order {

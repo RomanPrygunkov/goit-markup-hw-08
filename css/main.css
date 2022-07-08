@@ -331,6 +331,13 @@
   background-position: center;
 }
 
+@media screen and (min-width: 768px) {
+  .main-header-bg {
+    max-width: 768px;
+    max-height: 400px;
+  }
+}
+
 .button-order {
   display: inline-block;
   text-align: center;
@@ -359,12 +366,29 @@
   background-color: #188CE8;
 }
 
+@media screen and (min-width: 768px) {
+  .specification-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
 .specification-list__header {
   text-align: center;
   margin-bottom: 10px;
   font-size: 14px;
   text-transform: uppercase;
   color: #212121;
+}
+
+@media screen and (min-width: 768px) {
+  .specification-list__header {
+    text-align: start;
+  }
 }
 
 .specification-list__title {
@@ -377,8 +401,20 @@
   max-width: 450px;
 }
 
+@media screen and (min-width: 768px) {
+  .specification-list__item {
+    max-width: 354px;
+  }
+}
+
 .specification-list__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .specification-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .specification-container {
@@ -460,6 +496,15 @@
           justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+  .staff-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 30px;
+  }
+}
+
 .staff-list img {
   width: 100%;
 }
@@ -472,8 +517,20 @@
   border-radius: 0px 0px 4px 4px;
 }
 
+@media screen and (min-width: 768px) {
+  .staff-list__item {
+    width: 354px;
+  }
+}
+
 .staff-list__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .staff-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .staff-list__title {
@@ -607,6 +664,12 @@
 .clients-list__links:hover, .clients-list__links:focus {
   border: 1px solid #2196F3;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__links {
+    width: 226px;
+  }
 }
 
 .clients-list li:not(:last-child) {

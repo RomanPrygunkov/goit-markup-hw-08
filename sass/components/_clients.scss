@@ -30,6 +30,11 @@
     &:focus {
         @include border ($selected-color);
     }
+
+@media screen and (min-width: $tablets) {
+    width: 226px;
+    
+}
 }
 }
 

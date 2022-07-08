@@ -1,8 +1,10 @@
 .specification-list {
     
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
+@media screen and (min-width: $tablets) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
 &__header {
     text-align: center;
@@ -10,6 +12,10 @@
     font-size: 14px;
     text-transform: uppercase;
     color: $main-black-color;
+
+@media screen and (min-width: $tablets) {
+    text-align: start;
+}
 }  
 
 &__title {
@@ -20,9 +26,17 @@
 
 &__item {
     max-width: 450px;
+
+@media screen and (min-width: $tablets) {
+    max-width: 354px;
+}
 }
 &__item:not(:last-child) {
     margin-bottom: 30px;
+
+@media screen and (min-width: $tablets) {
+    margin-bottom: 0;
+}
 }
 
 }
