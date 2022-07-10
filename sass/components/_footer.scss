@@ -11,10 +11,22 @@
 
 /* Footer contacts */
 
+.footer-formating__container {
+    @media screen and (min-width: $tablets) {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: baseline;
+
+        margin-top: 60px;
+        
+    }
+}
+
 .footer-formating {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
 &__contacts {
     display: block;
@@ -38,6 +50,11 @@
 &__normal {
     font-style: normal;
     text-align: center;
+
+@media screen and (min-width: $tablets) {
+    margin-right: 165px;
+    margin-bottom: 60px;
+}
 }
 
 &__adress {
@@ -50,7 +67,7 @@
     color: $primary-text-color;
 }
 
-}
+
 
 
 .footer-social {
@@ -98,14 +115,26 @@
     margin-bottom: 20px;
     text-transform: uppercase;
     color: $primary-text-color;
-}
-}
 
+@media screen and (min-width: $tablets) {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+}
+}
+}
 .footer-form {
    text-align: center;
 
+
+
 &__label {
-    
+
+@media screen and (min-width: $tablets) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
 
 &__input {
@@ -118,6 +147,10 @@
     
     background-color: #2F303A;
     color: $primary-text-color;
+
+@media screen and (min-width: $tablets) {
+    width: 450px;
+}
 }
 
 &__input::placeholder {
@@ -167,6 +200,10 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+
+@media screen and (min-width: $tablets) {
+    width: 200px;
+}
 }
 
 }
