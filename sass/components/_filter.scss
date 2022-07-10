@@ -4,6 +4,16 @@
     display: flex;
     flex-wrap: wrap;
     gap: 15px 8px;
+
+@media screen and (min-width: $tablets) {
+    justify-content: center;
+    gap: 0;
+:not(:last-child) {
+    margin-right: 8px;
+}
+}
+
+
 }
 
 

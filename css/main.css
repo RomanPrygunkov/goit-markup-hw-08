@@ -696,6 +696,18 @@
   gap: 15px 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .filter-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0;
+  }
+  .filter-list :not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
 .filter-list__button {
   display: inline-block;
   padding-top: 6px;
@@ -735,6 +747,15 @@
           justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 30px;
+  }
+}
+
 .portfolio-list__cards {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -745,9 +766,21 @@
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-list__cards:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .portfolio-list__cards {
     min-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list__cards {
+    min-width: 354px;
   }
 }
 
@@ -763,6 +796,12 @@
 .portfolio-list__links:hover, .portfolio-list__links:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list__links {
+    width: 354px;
+  }
 }
 
 .portfolio-list__links:hover .portfolio-overlay__description,
@@ -818,6 +857,12 @@
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-container {
+    min-height: 146px;
+  }
 }
 
 .portfolio-container__descript {
@@ -1172,6 +1217,12 @@ body.modal-open {
   padding-top: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .custom-top-padding {
+    padding-top: 30px;
+  }
+}
+
 img {
   display: block;
 }
@@ -1258,6 +1309,13 @@ h1 {
     top: 50%;
     width: 450px;
     min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .modal {
+    z-index: 999;
+    top: 70%;
   }
 }
 

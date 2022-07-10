@@ -9,6 +9,7 @@
     flex-direction: column;
     margin-top: 48px;
     margin-left: 40px;
+    
 
 @media screen and (min-width: $tablets) {
     flex-direction: row;
@@ -52,7 +53,7 @@
 
 .header-nav__link--secondary-color {
     color: $selected-color;
-
+    
 &::after {
 @media screen and (min-width: $tablets) {
     position: absolute;
@@ -63,6 +64,7 @@
     border-bottom: 4px solid $selected-color;
     border-radius: 2px;
     transform: translateY(1px);
+    
 }
 }
 }

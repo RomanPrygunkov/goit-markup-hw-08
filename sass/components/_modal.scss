@@ -45,6 +45,11 @@
     top: 50%;
     width: 450px;
     min-height: 609px;
+
+@media screen and (min-width: $tablets) {
+    z-index: 999;
+    top: 70%;
+}
     
 }
 
@@ -52,6 +57,7 @@
 
 &-form {
     width: 290px;
+    
 @media screen and (min-width: $mobile) {
         width: 370px;
 }

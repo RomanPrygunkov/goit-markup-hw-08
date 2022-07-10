@@ -8,7 +8,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+
+@media screen and (min-width: $tablets) {
+    justify-content: flex-start;
+    gap: 30px;
+}
 
 &__cards {
     
@@ -16,15 +20,24 @@
     min-width: 90vw;
     &:not(:last-child) {
         margin-bottom: 30px;
+    @media screen and (min-width: $tablets) {
+        margin-bottom: 0;
     }
+    }
+
 @media screen and (min-width: $mobile) {
     min-width: 450px;
 }
+
+@media screen and (min-width: $tablets) {
+    min-width: 354px;
 }
+}
+
+
 
 &__links {
     display: block;
-
     text-decoration: none;
     transition: box-shadow $time $cubic;
 
@@ -34,6 +47,10 @@
             0px 4px 4px rgba(0, 0, 0, 0.06),
             1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+
+@media screen and (min-width: $tablets) {
+    width: 354px;
+}
 }
 }
 
@@ -82,6 +99,9 @@
     @media screen and (min-width: $mobile) {
             max-width: 450px;
         }
+        @media screen and (min-width: $tablets) {
+            // max-width: 354px;
+        }
 }
 
 }
@@ -96,6 +116,10 @@
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
+
+@media screen and (min-width: $tablets) {
+    min-height: 146px;
+}
 
     &__descript {
     
