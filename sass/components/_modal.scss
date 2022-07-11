@@ -50,6 +50,13 @@
     z-index: 999;
     top: 70%;
 }
+
+@media screen and (min-width: $desktop) {
+    z-index: 999;
+    top: 50%;
+    width: 528px;
+    min-height: 581px;
+}
     
 }
 
@@ -59,9 +66,13 @@
     width: 290px;
     
 @media screen and (min-width: $mobile) {
-        width: 370px;
+    width: 370px;
 }
-    }
+
+@media screen and (min-width: $desktop) {
+    width: 448px;
+}
+}
 
 
 &-close {
@@ -79,10 +90,6 @@
         @include border(rgba(0, 0, 0, 0.1), 50%);
     }
 
-& p {
-        margin-top: 40px;
-        margin-bottom: 30px;
-    }
 
 &-iconclose {
         width: 11px;
@@ -94,6 +101,8 @@
     }
 
 &-description {
+        margin-top: 40px;
+        margin-bottom: 30px;
         font-size: 12px;
         line-height: 1.16;
         color: $main-black-color;
@@ -102,7 +111,13 @@
         font-size: 20px;
         line-height: 1.5;
     }
-    }
+
+@media screen and (min-width: $desktop) {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 1.15;
+}
+}
 
 &-area {
         position: relative;
@@ -230,6 +245,11 @@
     @media screen and (min-width: $mobile) {
         font-size: 12px;
         line-height: 1.16;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+        line-height: 1.71;
     }
     }
 
