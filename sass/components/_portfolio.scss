@@ -32,6 +32,10 @@
 @media screen and (min-width: $tablets) {
     min-width: 354px;
 }
+
+@media screen and (min-width: $desktop) {
+    min-width: 370px;
+}
 }
 
 
@@ -50,6 +54,10 @@
 
 @media screen and (min-width: $tablets) {
     width: 354px;
+}
+
+@media screen and (min-width: $desktop) {
+    width: 370px;
 }
 }
 }
@@ -99,9 +107,6 @@
     @media screen and (min-width: $mobile) {
             max-width: 450px;
         }
-        @media screen and (min-width: $tablets) {
-            // max-width: 354px;
-        }
 }
 
 }
@@ -119,6 +124,10 @@
 
 @media screen and (min-width: $tablets) {
     min-height: 146px;
+}
+
+@media screen and (min-width: $desktop) {
+    min-height: 100px;
 }
 
     &__descript {
