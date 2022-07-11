@@ -13,6 +13,11 @@ body.modal-open {
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
+
+@media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 }
 
 .container {
@@ -80,6 +85,11 @@ h1 {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $primary-text-color;
+
+@media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+}
 }
 
 /* Fonts for h2 Index */
@@ -91,4 +101,10 @@ h1 {
     line-height: 1.17;
     text-align: center;
     color: $main-black-color;
+
+@media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+}
 }

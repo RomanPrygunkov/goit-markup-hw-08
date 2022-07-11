@@ -1,13 +1,19 @@
-// .field-activity-section {
-//     margin-bottom: 94px;
-// }
 
 .for-mobile.section {
     padding: 0;
+@media screen and (min-width: $desktop) {
+        
+        padding-bottom: 94px;
+    }
+
 }
 
-.for-mobile > .container{
+.for-mobile > .container {
     display: none;
+
+@media screen and (min-width: $desktop) {
+        display: block;
+    }
    
 }
 
@@ -18,6 +24,10 @@
 
     flex-wrap: wrap;
     justify-content: space-between;
+
+@media screen and (min-width: $desktop) {
+        display: flex;
+    }
 
 &__description {
     position: absolute;

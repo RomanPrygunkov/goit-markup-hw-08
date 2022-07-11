@@ -352,9 +352,22 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .main-header {
+    width: 696px;
+  }
+}
+
 .main-header-bg.section {
   padding-top: 118px;
   padding-bottom: 118px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-header-bg.section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .main-header-bg {
@@ -386,6 +399,13 @@
   .main-header-bg {
     max-width: 768px;
     max-height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-header-bg {
+    max-width: 1600px;
+    max-height: 600px;
   }
 }
 
@@ -458,6 +478,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .specification-list__item {
+    max-width: 270px;
+  }
+}
+
 .specification-list__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -488,8 +514,20 @@
   padding: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .for-mobile.section {
+    padding-bottom: 94px;
+  }
+}
+
 .for-mobile > .container {
   display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .for-mobile > .container {
+    display: block;
+  }
 }
 
 .activity-list {
@@ -499,6 +537,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 1200px) {
+  .activity-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .activity-list__description {
@@ -571,6 +617,13 @@
 @media screen and (min-width: 768px) {
   .staff-list__item {
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .staff-list__item {
+    min-width: 270px;
+    width: 270px;
   }
 }
 
@@ -720,6 +773,12 @@
 @media screen and (min-width: 768px) {
   .clients-list__links {
     width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list__links {
+    width: 170px;
   }
 }
 
@@ -958,6 +1017,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-formating__container {
+    margin-top: 0;
+  }
+}
+
 .footer-formating {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -969,6 +1034,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-formating {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .footer-formating__contacts {
@@ -997,6 +1077,13 @@
   .footer-formating__normal {
     margin-right: 165px;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-formating__normal {
+    margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -1086,6 +1173,12 @@
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    text-align: start;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-form__label {
     display: -webkit-box;
@@ -1098,6 +1191,15 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__label {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -1115,6 +1217,14 @@
 @media screen and (min-width: 768px) {
   .footer-form__input {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    margin-bottom: 0;
+    margin-right: 12px;
+    width: 358px;
   }
 }
 
@@ -1227,6 +1337,13 @@ body.modal-open {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .container {
   margin-top: 0;
   margin-bottom: 0;
@@ -1301,6 +1418,13 @@ h1 {
   color: #FFFFFF;
 }
 
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 /* Fonts for h2 Index */
 .secondary-header {
   font-weight: 700;
@@ -1309,6 +1433,14 @@ h1 {
   line-height: 1.17;
   text-align: center;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .secondary-header {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .backdrop {

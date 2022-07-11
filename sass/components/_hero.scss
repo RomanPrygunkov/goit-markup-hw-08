@@ -6,11 +6,20 @@
 @media screen and (min-width: $mobile) {
         width: 360px;
     }
+
+@media screen and (min-width: $desktop) {
+    width: 696px;
+}
 }
 
 .main-header-bg.section {
     padding-top: 118px;
     padding-bottom: 118px;
+
+@media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 }
 
 .main-header-bg {
@@ -37,7 +46,11 @@
     max-width: 768px;
     max-height: 400px;
 }
-    
+
+@media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    max-height: 600px;
+}
 }
 
 .button-order {
