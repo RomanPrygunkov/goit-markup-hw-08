@@ -25,18 +25,16 @@ body.modal-open {
     
     @media screen and (min-width: $mobile) {
         width: $mobile;
-        
-        
     }
   
 
     @media screen and (min-width: $tablets) {
         width: $tablets;
-        outline: 1px solid red;
     }
 
     @media screen and (min-width: $desktop) {
         width: $desktop;
+        outline: 1px solid red;
     }
 }
 

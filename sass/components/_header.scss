@@ -79,6 +79,10 @@
     margin-right: 84px;
 }
 
+@media screen and (min-width: $desktop) {
+    justify-content: space-between;
+    
+}
 }
 
 .header-contacts {
@@ -97,6 +101,12 @@
     
 }
 
+@media screen and (min-width: $desktop) {
+    flex-direction: row;
+    
+}
+
+
 &__item:not(:last-child) {
     margin-top: 32px;
 @media screen and (min-width: $tablets) {
@@ -104,6 +114,13 @@
     margin-top: 0;
     margin-bottom: 8px;
 }
+
+@media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+    margin-left: 305px;
+    margin-right: 30px;
+}
+
 }    
 
 
@@ -112,8 +129,8 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 1.16;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     color: $links-gray;
     @extend %transition-color;
     &:hover,
@@ -126,6 +143,11 @@
     font-size: 12px;
     line-height: 1.16;
 }
+
+@media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 16px;
+}
 }
 
 
@@ -136,16 +158,29 @@
     margin-right: 8px;
     fill: $links-gray;
 }
+
+@media screen and (min-width: $tablets) {
+    margin-right: 10px;
+}
 }
 
 &__icon.mail {
     width: 14px;
     height: 10px;
+
+@media screen and (min-width: $desktop) {
+    width: 16px;
+    height: 12px;
+}
 }
 
 &__icon.phone {
     width: 10px;
     height: 14px;
+
+@media screen and (min-width: $desktop) {
+    height: 16px;
+}
 }
 }
 
