@@ -1550,7 +1550,7 @@ h1 {
 @media screen and (min-width: 480px) and (min-width: 1200px) {
   .modal {
     z-index: 999;
-    top: 50%;
+    top: 60%;
     width: 528px;
     min-height: 581px;
   }

@@ -225,34 +225,34 @@
           <ul class="activity-list">
             <li class="activity-list__item">
               <div class="activity-list__image">
-                <img
-                  src="./images/pc.jpg"
-                  alt="Разработка для ПК"
-                  width="370"
-                  aria-label="Картинка с копьютером"
-                />
+                <picture>
+                  <source srcset="./images/pc.jpg 1x, ./images/pc-2x.jpg 2x" type="image/jpg" />
+                  <img src="./images/pc.jpg" alt="Десктоп" />
+                </picture>
                 <h3 class="activity-list__description">Десктопные приложения</h3>
               </div>
             </li>
             <li class="activity-list__item">
               <div class="activity-list__image">
-                <img
-                  src="./images/phone.jpg"
-                  alt="Разработка для смартфонов"
-                  width="370"
-                  aria-label="Картинка с смартфоном"
-                />
+                <picture>
+                  <source
+                    srcset="./images/mobile.jpg 1x, ./images/mobile-2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/mobile.jpg" alt="Смартфон" />
+                </picture>
                 <h3 class="activity-list__description">Мобильные приложения</h3>
               </div>
             </li>
             <li class="activity-list__item">
               <div class="activity-list__image">
-                <img
-                  src="./images/tablets.jpg"
-                  alt="Разработка для планшетов"
-                  width="370"
-                  aria-label="Картинка с палитрой"
-                />
+                <picture>
+                  <source
+                    srcset="./images/tablet.jpg 1x, ./images/tablet-2x.jpg 2x"
+                    type="image/jpg"
+                  />
+                  <img src="./images/tablet.jpg" alt="Планшет" />
+                </picture>
                 <h3 class="activity-list__description">Дизайнерские решения</h3>
               </div>
             </li>
