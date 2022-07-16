@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
 @media screen and (min-width: $mobile) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+    
 }
 
 &__icon {
@@ -15,6 +17,7 @@
     height: 60px;
     fill: #AFB1B8;
     @extend %transition-fill;
+
 }
 
 &__links {
@@ -30,7 +33,10 @@
     &:focus {
         @include border ($selected-color);
     }
-
+@media screen and (max-width: 479px) {
+    width: 100%;
+    
+}
 @media screen and (min-width: $tablets) {
     width: 226px;
     
@@ -42,8 +48,16 @@
 }
 }
 }
+.clients-list li {
+
+@media screen and (max-width: 479px) {
+     width: 100%;
+}
+}
+
 
 .clients-list li:not(:last-child) {
+    
     margin-bottom: 15px;
 @media screen and (min-width: $mobile) {
     margin-bottom: 0;

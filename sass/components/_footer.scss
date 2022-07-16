@@ -17,7 +17,7 @@
     display: inline-flex;
     flex-direction: row;
     align-items: baseline;
-    margin-top: 60px;
+    
 }
 
 @media screen and (min-width: $desktop) {
@@ -46,15 +46,18 @@
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     @extend %transition-color;
+     margin-top: 8px;
 
-    &:last-child {
-        margin-top: 8px;
-    }
 
     &:hover,
     &:focus {
         color: $selected-color;
     }
+
+@media screen and (min-width: $desktop) {
+    margin-top: 9px;
+}
+
 }
 
 &__normal {
@@ -67,6 +70,7 @@
 }
 
 @media screen and (min-width: $desktop) {
+    text-align: start;
     margin-right: 70px;
     margin-bottom: 0;
 }
@@ -74,7 +78,6 @@
 
 &__adress {
     margin-top: 20px;
-    margin-bottom: 8px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -89,9 +92,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 60px;
+
+@media screen and (min-width: $tablets) {
+       margin-top: 0;
+}
 
 &__list {
     display: flex;
+    margin-top: 20px;
 }   
 
 & li:not(:last-child) {
@@ -126,22 +135,24 @@
 }
 
 &__text {
-    margin-top: 60px;
-    margin-bottom: 20px;
     text-transform: uppercase;
     color: $primary-text-color;
 
 @media screen and (min-width: $tablets) {
     margin-top: 0;
-    margin-bottom: 20px;
+    
 }
-
-
 }
 }
 }
 .footer-form {
    text-align: center;
+   margin-top: 60px;
+
+@media screen and (min-width: $tablets) {
+        margin-top: 0;
+
+}
 
 @media screen and (min-width: $desktop) {
        text-align: start;
@@ -163,9 +174,9 @@
 &__input {
     min-width: 300px;
     height: 50px;
-    margin-bottom: 20px;
     padding-left: 16px;
-    
+    margin-top: 20px;
+
     @include border (rgba(255, 255, 255, 0.3));
     
     background-color: #2F303A;
@@ -196,6 +207,7 @@
 &__button {
     display: inline-flex;
     
+    margin-top: 20px;
     padding-left: 29px;
     padding-right: 28px;
     padding-top: 10px;
@@ -234,6 +246,5 @@
     width: 200px;
 }
 }
-
 }
 

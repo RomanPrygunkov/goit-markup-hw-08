@@ -6,7 +6,12 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    z-index: 999;
+    z-index: 2;
+&.is-open {
+    position: fixed;
+    
+}    
+
 &:focus>svg,
 &:hover>svg {
     fill: $selected-color
@@ -15,16 +20,20 @@
 @media screen and (min-width: $tablets) {
     display: none;
 }
+
 }
 
 .header-formatting__icon--menu{
+    
     @extend %transition-fill;
 }
 .header-formatting__icon--close {
+    
     @extend %transition-fill;
 }
 
 .header-formatting__button.is-open .header-formatting__icon--close {
+    
     display: block;
 }
 
@@ -43,23 +52,25 @@
 
 .header-contacts__social {
     display: flex;
-    margin-top: 40px;
-    margin-left: 40px;
+    
 
-@media screen and (min-width: $mobile) {
-    margin-top: 64px;
-}
+
 
 &--item a {
     font-weight: 500;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: $selected-color;
-@media screen and (min-width: $mobile) {
-    font-size: 18px;
+@media screen and (max-width: 376px) {
+    font-size: 4.3vw;
 }
+
+@media screen and (max-height: 427px) {
+    font-size: 5.4vh;
+}
+
 }
 
 
